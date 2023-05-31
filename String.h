@@ -37,7 +37,7 @@ public:
 		delete[] tmp;
 	}
 
-	int get_length() { return strlen(_str); }
+	size_t get_length() { return strlen(_str); }
 
 	errno_t soft_remove_end(int value) {
 		if (!is_correct_index(value))
