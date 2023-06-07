@@ -10,13 +10,11 @@ int main()
 	SetConsoleCP(1251);
 
 	String str("Hello");
+	String str1("Hello");
 	cout << str.get_str() << endl;
 
-	str.append(" world!");
-	cout << str.get_str() << endl;
-
-	str.soft_remove_start(4);
-	cout << str.get_str() << endl;
+	str.replace(str1);
+	cout << str << endl;
 
 	return 0;
 }
